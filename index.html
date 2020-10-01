@@ -7,6 +7,55 @@
   <link href="normalize.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <title>Web Dev Simplified</title>
+  
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: 100px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #2980b9;
+  color: white;
+}
+
+.flip-card-back {
+  background-color: #005681;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+  
+  
 </head>
 <body>
   <header>
@@ -56,33 +105,56 @@
       </div>
     </section>
     <section class="grid grid-benefit-detail">
-      <div class="benefit-detail">
-        <div class="benefit-detail-title">
-          Email Updates
-        </div>
-        <div class="benefit-detail-text">
-          All Web Dev Simplified course, YouTube, and Patreon updates will be sent via email to members so you can stay up to date with everything Web Dev Simplified.
-        </div>
+      
+	    
+      <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+           <h1><u>Email Updates</u></h1> 
+        <h2> All Web Dev Simplified course, YouTube, and Patreon updates will be sent via email to members so you can stay up to date with everything Web Dev Simplified.</h2>
       </div>
-      <div class="benefit-detail">
-        <div class="benefit-detail-title">
-          Special Discounts
-        </div>
-        <div class="benefit-detail-text">
-          All members of the Web Dev Simplified mailing list will receive exclusive discounts on
+    <div class="flip-card-back">
+      <h1>WEB</h1> 
+    <h3>Be the first to know when my Learn React Today course drops!</h3>
+	<h5>ALL THE BEST!</h5>
+    </div>
+  </div>
+</div>  
+        
+      
+      <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <h1><u>Special Discounts</u></h1> 
+	 <h2>All members of the Web Dev Simplified mailing list will receive exclusive discounts on
           <strong>all future</strong>
-          Web Dev Simplified courses.
-        </div>
-      </div>
-      <div class="benefit-detail">
-        <div class="benefit-detail-title">
-          Extra Content
-        </div>
-        <div class="benefit-detail-text">
-          Email members will receive extra content such as course updates, discounts, and behind the scenes information on everything Web Dev Simplified.
-        </div>
-      </div>
+          Web Dev Simplified courses.</h2> 
+    </div>
+    <div class="flip-card-back">
+      <h1>DEV</h1> 
+    <h3>Be the first to know when my Learn React Today course drops!</h3>
+	<h5>ALL THE BEST!</h5>
+    </div>
+  </div>
+</div>
+	 
+      <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <h1><u>Extra Content</u></h1> 
+	 <h2> Email members will receive extra content such as course updates, discounts, and behind the scenes information on everything Web Dev Simplified.</h2> 
+    </div>
+    <div class="flip-card-back">
+      <h1>Simplified</h1> 
+    <h3>Be the first to know when my Learn React Today course drops!</h3>
+	<h5>ALL THE BEST!</h5>
+    </div>
+  </div>
+</div>
     </section>
   </main>
 </body>
 </html>
+
+         
+ 
