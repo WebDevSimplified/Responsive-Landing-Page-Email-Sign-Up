@@ -1,25 +1,93 @@
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Bold.woff2') format('woff2'),
-		url('fonts/GothamRounded-Bold.woff') format('woff');
+	font-family: "Gotham Rounded";
+	src: url("fonts/GothamRounded-Bold.woff2") format("woff2"),
+		url("fonts/GothamRounded-Bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Light.woff2') format('woff2'),
-		url('fonts/GothamRounded-Light.woff') format('woff');
+	font-family: "Gotham Rounded";
+	src: url("fonts/GothamRounded-Light.woff2") format("woff2"),
+		url("fonts/GothamRounded-Light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Book.woff2') format('woff2'),
-		url('fonts/GothamRounded-Book.woff') format('woff');
+	font-family: "Gotham Rounded";
+	src: url("fonts/GothamRounded-Book.woff2") format("woff2"),
+		url("fonts/GothamRounded-Book.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
+}
+
+:root {
+  --default-selection-color: white; /* Use a fallback of black, as it would be a good color for older browsers anyway */
+  --email-form-input-color: #005681; /* Use a fallback of #005681, as it is the original */
+  --benefit-detail-title-color: #333; /* Use a fallback of #333, as it is the original */
+  --benefit-detail-text-color: #444; /* Use a fallback of #444, as it is the original */
+}
+
+::-moz-selection {
+  color: var(--default-selection-color, black);
+}
+::-webkit-selection {
+  color: var(--default-selection-color, black);
+}
+::-o-selection {
+  color: var(--default-selection-color, black);
+}
+::-ms-selection {
+  color: var(--default-selection-color, black);
+}
+::selection {
+  color: var(--default-selection-color, black);
+}
+.email-form input::moz-selection {
+  color: var(--email-form-input-color, #005681);
+}
+.email-form input::webkit-selection {
+  color: var(--email-form-input-color, #005681);
+}
+.email-form input::o-selection {
+  color: var(--email-form-input-color, #005681);
+}
+.email-form input::ms-selection {
+  color: var(--email-form-input-color, #005681);
+}
+.email-form input::selection {
+  color: var(--email-form-input-color, #005681);
+}
+.benefit-detail-title::moz-selection {
+  color: var(--benefit-detail-title-color, #333);
+}
+.benefit-detail-title::webkit-selection {
+  color: var(--benefit-detail-title-color, #333);
+}
+.benefit-detail-title::o-selection {
+  color: var(--benefit-detail-title-color, #333);
+}
+.benefit-detail-title::ms-selection {
+  color: var(--benefit-detail-title-color, #333);
+}
+.benefit-detail-title::selection {
+  color: var(--benefit-detail-title-color, #333);
+}
+.benefit-detail-text::moz-selection {
+  color: var(--benefit-detail-text-color, #444);
+}
+.benefit-detail-text::webkit-selection {
+  color: var(--benefit-detail-text-color, #444);
+}
+.benefit-detail-text::o-selection {
+  color: var(--benefit-detail-text-color, #444);
+}
+.benefit-detail-text::ms-selection {
+  color: var(--benefit-detail-text-color, #444);
+}
+.benefit-detail-text::selection {
+  color: var(--benefit-detail-text-color, #444);
 }
 
 body {
@@ -163,7 +231,7 @@ body {
 
 .email-form input {
   background-color: white;
-  color: #005681;
+  color: var(--email-form-input-color, #005681);
   border: 2px solid black;
   border-radius: .5em;
   padding: .5em 1em;
@@ -216,13 +284,13 @@ body {
 .benefit-detail-title {
   text-align: center;
   font-size: 1.75rem;
-  color: #333;
+  color: var(--benefit-detail-title-color, #333);
   margin-bottom: 2rem;
 }
 
 .benefit-detail-text {
   font-size: 1.5rem;
-  color: #444;
+  color: var(--benefit-detail-text-color, #444);
   font-weight: lighter;
 }
 
