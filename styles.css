@@ -24,23 +24,23 @@
 
 ::-moz-selection {
   color: inherit;
-  background: mediumorchid;
+  background: orchid;
 }
 ::-webkit-selection {
   color: inherit;
-  background: mediumorchid;
+  background: orchid;
 }
 ::-o-selection {
   color: inherit;
-  background: mediumorchid;
+  background: orchid;
 }
 ::-ms-selection {
   color: inherit;
-  background: mediumorchid;
+  background: orchid;
 }
 ::selection {
   color: inherit;
-  background: mediumorchid;
+  background: orchid;
 }
 
 body {
