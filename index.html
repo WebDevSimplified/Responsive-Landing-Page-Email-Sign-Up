@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+
+
+
+<script>console.time("load")</script>
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,56 +15,10 @@
   <link href="styles.css" rel="stylesheet">
   <title>Web Dev Simplified</title>
   <link rel="shortcut icon" href="https://javascriptlearner815.github.io/Responsive-Landing-Page-Email-Sign-Up/images/logo.png" type="image/x-icon">
-  
-  <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-  margin-left: 100px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #2980b9;
-  color: white;
-}
-
-.flip-card-back {
-  background-color: #005681;
-  color: white;
-  transform: rotateY(180deg);
-}
-</style>
-  
-  
 </head>
+	
+	
+	
 <body>
   <header>
     <div class="dark-header grid">
@@ -157,6 +117,9 @@ body {
   </main>
 </body>
 </html>
+
+
+<script>console.timeEnd("load")</script>
 
          
  
