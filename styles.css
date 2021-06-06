@@ -22,72 +22,25 @@
 	font-style: normal;
 }
 
-:root {
-  --default-selection-color: white; /* Use a fallback of white, as it is the original */
-  --email-form-input-color: #005681; /* Use a fallback of #005681, as it is the original */
-  --benefit-detail-title-color: #333; /* Use a fallback of #333, as it is the original */
-  --benefit-detail-text-color: #444; /* Use a fallback of #444, as it is the original */
-}
-
 ::-moz-selection {
-  color: var(--default-selection-color, white);
+  color: inherit;
+  background: mediumorchid;
 }
 ::-webkit-selection {
-  color: var(--default-selection-color, white);
+  color: inherit;
+  background: mediumorchid;
 }
 ::-o-selection {
-  color: var(--default-selection-color, white);
+  color: inherit;
+  background: mediumorchid;
 }
 ::-ms-selection {
-  color: var(--default-selection-color, white);
+  color: inherit;
+  background: mediumorchid;
 }
 ::selection {
-  color: var(--default-selection-color, white);
-}
-.email-form input::moz-selection {
-  color: var(--email-form-input-color, #005681);
-}
-.email-form input::webkit-selection {
-  color: var(--email-form-input-color, #005681);
-}
-.email-form input::o-selection {
-  color: var(--email-form-input-color, #005681);
-}
-.email-form input::ms-selection {
-  color: var(--email-form-input-color, #005681);
-}
-.email-form input::selection {
-  color: var(--email-form-input-color, #005681);
-}
-.benefit-detail-title::moz-selection {
-  color: var(--benefit-detail-title-color, #333);
-}
-.benefit-detail-title::webkit-selection {
-  color: var(--benefit-detail-title-color, #333);
-}
-.benefit-detail-title::o-selection {
-  color: var(--benefit-detail-title-color, #333);
-}
-.benefit-detail-title::ms-selection {
-  color: var(--benefit-detail-title-color, #333);
-}
-.benefit-detail-title::selection {
-  color: var(--benefit-detail-title-color, #333);
-}
-.benefit-detail-text::moz-selection {
-  color: var(--benefit-detail-text-color, #444);
-}
-.benefit-detail-text::webkit-selection {
-  color: var(--benefit-detail-text-color, #444);
-}
-.benefit-detail-text::o-selection {
-  color: var(--benefit-detail-text-color, #444);
-}
-.benefit-detail-text::ms-selection {
-  color: var(--benefit-detail-text-color, #444);
-}
-.benefit-detail-text::selection {
-  color: var(--benefit-detail-text-color, #444);
+  color: inherit;
+  background: mediumorchid;
 }
 
 body {
@@ -231,7 +184,7 @@ body {
 
 .email-form input {
   background-color: white;
-  color: var(--email-form-input-color, #005681);
+  color: #005681;
   border: 2px solid black;
   border-radius: .5em;
   padding: .5em 1em;
@@ -284,13 +237,13 @@ body {
 .benefit-detail-title {
   text-align: center;
   font-size: 1.75rem;
-  color: var(--benefit-detail-title-color, #333);
+  color: #333;
   margin-bottom: 2rem;
 }
 
 .benefit-detail-text {
   font-size: 1.5rem;
-  color: var(--benefit-detail-text-color, #444);
+  color: #444;
   font-weight: lighter;
 }
 
