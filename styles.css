@@ -49,10 +49,6 @@ body {
   padding-bottom: 50px;
 }
 
-.site-description, .page-description {
-  text-align: center;
-}
-
 .flip-card {
   background-color: transparent;
   width: 300px;
