@@ -23,26 +23,26 @@
 }
 
 :root {
-  --default-selection-color: white; /* Use a fallback of black, as it would be a good color for older browsers anyway */
+  --default-selection-color: white; /* Use a fallback of white, as it is the original */
   --email-form-input-color: #005681; /* Use a fallback of #005681, as it is the original */
   --benefit-detail-title-color: #333; /* Use a fallback of #333, as it is the original */
   --benefit-detail-text-color: #444; /* Use a fallback of #444, as it is the original */
 }
 
 ::-moz-selection {
-  color: var(--default-selection-color, black);
+  color: var(--default-selection-color, white);
 }
 ::-webkit-selection {
-  color: var(--default-selection-color, black);
+  color: var(--default-selection-color, white);
 }
 ::-o-selection {
-  color: var(--default-selection-color, black);
+  color: var(--default-selection-color, white);
 }
 ::-ms-selection {
-  color: var(--default-selection-color, black);
+  color: var(--default-selection-color, white);
 }
 ::selection {
-  color: var(--default-selection-color, black);
+  color: var(--default-selection-color, white);
 }
 .email-form input::moz-selection {
   color: var(--email-form-input-color, #005681);
