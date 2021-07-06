@@ -1,31 +1,93 @@
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Bold.woff2') format('woff2'),
-		url('fonts/GothamRounded-Bold.woff') format('woff');
+	font-family: "Gotham Rounded";
+	src: url("fonts/GothamRounded-Bold.woff2") format("woff2"),
+		url("fonts/GothamRounded-Bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Light.woff2') format('woff2'),
-		url('fonts/GothamRounded-Light.woff') format('woff');
+	font-family: "Gotham Rounded";
+	src: url("fonts/GothamRounded-Light.woff2") format("woff2"),
+		url("fonts/GothamRounded-Light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Book.woff2') format('woff2'),
-		url('fonts/GothamRounded-Book.woff') format('woff');
+	font-family: "Gotham Rounded";
+	src: url("fonts/GothamRounded-Book.woff2") format("woff2"),
+		url("fonts/GothamRounded-Book.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
+::-moz-selection {
+  color: inherit;
+  background: orchid;
+}
+::-webkit-selection {
+  color: inherit;
+  background: orchid;
+}
+::-o-selection {
+  color: inherit;
+  background: orchid;
+}
+::-ms-selection {
+  color: inherit;
+  background: orchid;
+}
+::selection {
+  color: inherit;
+  background: orchid;
+}
+
 body {
   margin: 0 auto;
-  font-family: Gotham Rounded, sans-serif;
+  font-family: Gotham Rounded, Arial, Helvetica, sans-serif;
   padding-bottom: 50px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: 100px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #2980b9;
+  color: white;
+}
+
+.flip-card-back {
+  background-color: #005681;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 .grid {
